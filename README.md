@@ -20,6 +20,11 @@ Package toFixed will export a function `ToFixed` that formats a number using fix
 
 ## Examples
 
+```go
+ToFixed(1.2345678, 2) // => 1.23
+ToFixed(1.2345678, 5) // => 1.23457
+```
+
 Go to [./examples](https://github.com/sqrthree/toFixed/blob/master/examples/hello-world.go) to see details.
 
 ## Tests
