@@ -41,7 +41,7 @@ import (
 func main() {
 	var f float64 = 18.923487203
   
-	fmt.Println(fmt.Sprintf("%.5f", f))
+	fmt.Println(fmt.Sprintf("%.5f", f))  // => 18.92349 string
 }
 ```
 
