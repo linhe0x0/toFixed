@@ -21,11 +21,29 @@ Package toFixed will export a function `ToFixed` that formats a number using fix
 ## Examples
 
 ```go
-ToFixed(1.2345678, 2) // => 1.23
-ToFixed(1.2345678, 5) // => 1.23457
+ToFixed(1.2345678, 2) // => 1.23 float64 
+ToFixed(1.2345678, 5) // => 1.23457 float64
 ```
 
 Go to [./examples](https://github.com/sqrthree/toFixed/blob/master/examples/hello-world.go) to see details.
+
+## Note
+
+Function `ToFixed` will return a float64 value, if you want to get a string value, you can use `fmt.Sprintf()`.
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var f float64 = 18.923487203
+  
+	fmt.Println(fmt.Sprintf("%.5f", f))
+}
+```
 
 ## Tests
 
